@@ -1,7 +1,13 @@
-// use these variables in your JSX (update them with your own name and city!)
-const name = "Liza";
-const city = "New York";
+import React from "react";
+import { name, city } from "../data/data.js";
 
-const image = "https://i.imgur.com/mV8PQxj.gif";
+function Home() {
+  // update the JSX being returned!
+  return (
+    <div id="home">
+      <h1 style={{ color: "firebrick" }}>{name} is a Web Developer from {city}</h1>
+    </div>
+  );
+}
 
-export { name, city, image };
+export default Home;
